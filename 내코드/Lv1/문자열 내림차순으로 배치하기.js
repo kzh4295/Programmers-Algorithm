@@ -26,5 +26,5 @@ function solution(s) {
   // reverse는 배열을 역순으로
   // join은 배열의 모든 요소를 문자열로 변환
   // string메서드와 배열 메서드가 혼란스러웠고, 굳이 정규식까지 안써도 되는데 어렵게 접근한 것 같다. 
-  return s.split('').reverse().join('');
+  return s.split('').sort().reverse().join('');
 }
