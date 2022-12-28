@@ -21,3 +21,21 @@ indexOf : 배열에서 원하는 특정 항목이 배열의 몇번째 원소인�
 findIndex : 배열 안에 있는 값이 객체이거나, 특정 값으로 찾는 것이 아니라 특정 조건으로 찾는 거면 indexOf으로 찾을 수 없음.
 
 total += param % 10; //자릿수의 합 
+
+노드리스트는 배열을 돌릴수 없음 => 스프레드 연산 => 배열화
+ex) 
+
+HTML
+<ul id="ul">
+  <li id="li-1">1</li>
+  <li id="li-2">2</li>
+  <li id="li-3">3</li>
+  <li id="li-4">4</li>
+  <li id="li-5">5</li>
+</ul>
+
+JS
+let ul = document.getElementById('ul').querySelectorAll('li');
+
+[...ul].forEach(ele=>console.log(ele))
+console.log([...ul])
