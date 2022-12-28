@@ -26,13 +26,13 @@ total += param % 10; //자릿수의 합
 ex) 
 
 HTML
-<ul id="ul">
+"<ul id="ul">
   <li id="li-1">1</li>
   <li id="li-2">2</li>
   <li id="li-3">3</li>
   <li id="li-4">4</li>
   <li id="li-5">5</li>
-</ul>
+</ul>"
 
 JS
 let ul = document.getElementById('ul').querySelectorAll('li');
