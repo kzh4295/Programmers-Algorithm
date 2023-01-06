@@ -39,3 +39,13 @@ let ul = document.getElementById('ul').querySelectorAll('li');
 
 [...ul].forEach(ele=>console.log(ele))
 console.log([...ul])
+
+요소 분리
+배열에서 일부 요소 새배열로 분리 => slice, splice)
+스트링 타입에서 일부요소 스트링으로 분리 => subString, subStr
+
+
+"3e10" *1 //30000000000
+"3e10325" *1 //Infinity
+NaN은 비교 연산이 되지 않으므로 isNaN을 적용해야함
+
