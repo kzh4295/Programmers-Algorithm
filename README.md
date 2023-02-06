@@ -183,6 +183,25 @@ NaN은 비교 연산이 되지 않으므로 isNaN을 적용해야함
   - .put : js의 replace 역할
   - 자바는 객체의 리터럴 개념이 없음 vs  자바스크립트 : 유사배열 허용
   
+  
+   ### 2/6(월)
+  ##### DFS vs BFS
+  - DFS(Depth First Search) : 
+    - 얼마나 깊은지 찾아가는 행위
+    - 스택, 재귀함수 같은 자료구조
+  - BFS(Breadth First Search) : 
+    - 얼마나 넓은지 찾아가는 행위
+    - 가까운 노드부터 탐색하는 알고리즘
+    - 큐 자료 구조
+  ##### 성능
+  - for loop(콜백에 따라 다름) > indexOf(콜백x => 자원소모 x) > findIndex(콜백o => 자원소모 o) > find(콜백o => 자원소모 o)
+                속도 빠름 <------
+  - indexOf가 정규식보다 빠름
+  - 정규식 replace는 일반 replace보다 성능이 빠르다.
+  
+  
+  
+  
  
  
  
