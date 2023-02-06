@@ -49,3 +49,142 @@ console.log([...ul])
 "3e10325" *1 //Infinity
 NaN은 비교 연산이 되지 않으므로 isNaN을 적용해야함
 
+### 12/20(화)
+
+#### 팁
+- 탐색 최소화 (루프, 배열 최소화)
+- JS는 작동 알고리즘에 따라 메서드 속도가 다름
+- JS 내장 메서드 속도
+    - splice는 코테에서 없는 것으로 생각해도 될 정도로 속도가 느리다
+    - splice는 push, pop으로 배열을 조작하는 것이 아닌 중간에서 조작한다.
+- 논리 비교의 경우 === 를 사용
+- 배열.length⇒ 내장메서드이므로 코드 길이를 줄이고자 for문에서 조건문으로 사용하면 for문 매조건마다 메서드를 돌리므로 상단에
+
+      변수 = 배열.length;
+
+       let arrLength = arr.length;
+
+       for(let i = 0; i < arrLength; i++){} 이런식으로 써야함
+
+- 지역스코프가 아니라면 변수 선언은 상단에 해야 좋음
+- 'abc' + 1  //'abc1'
+  'abc' * 1   //NaN
+  'abc' - 1   //NaN
+  'abc' / 1   //NaN
+- hash ⇒ key - value
+- 자료형에 대한 접근은 선언한 부분에서 찾기
+
+##### 자바
+    - char ⇒ 한글자
+    - 자바는 메모리 크기 정해야해서 최초크기 정해줘야함
+    - 제네릭 ⇒ 단순 자료형은 변수 생성시부터 자료형이 정해지지만 제네릭은 <String, Integer(int의 객체)>
+
+
+### 12/28(수)
+
+#### 팁
+- 0이상은 true이므로 조건문 > 0 으로 true/false 코드 지양
+- 스프레드 => 이터러블 => string은 유사배열
+- find, every, some으로 반복문 break, for문은 순수함수 아니니까 지양
+- break & for문을 사용하면 로직상 이상함을 느껴야함
+- 정규식 :  사파리 브라우저(모바일 브라우저 :  아이폰)에서 작동 x => 콘솔 x => 디버깅x
+- reduce 루프 돌때 acc, ele 같은 parameter를 메모리로 올려놓았음
+- 재귀함수는 빠르고 Js 브라우저에서 재귀제한 하지만, 용도에따라 추정이 되면 재귀로 짜고 그렇지 않으면 메모리를 물고 있으므로 재귀로 짜지 말기
+- 노드리스트(getElementById, querySelector)는 배열을 돌릴 수 없지만, 스프레드 연산자를 사용하여 배열화(이터러블화)하여 배열을 돌릴 수 있다 (ex) <ul> <li>
+
+##### for문
+- 메모리를 사용하지 않고 루프를 돌리므로 성능이 좋음
+- 인덱스에 접근을 많이 해서 오류 날 경우가 있으므로 지양 => forEach 지향
+- 밖에 변수를 참고하여 밖의 변수의 변경을 가하므로 비순수함수 => 지양
+
+##### 순수함수
+- 밖의 변수에 변경을 가하지 않고 함수에 parameter를 받아서 행위를 함 => 자바스크립트에서는 클로저를 사용하여 순수함수 동작
+  function increase(num){          => 파라미터로 받아서
+    let myNum = num;
+    return ()=>{
+        myNum++
+        return myNum               => return시켜 뱉어줌 => myNum이라는 변수는 접근 불가(프로그램에 얹는 것)
+    }
+  }
+ 
+ - 절차형 프로그래밍(순수함수) 관점에서 배열 메서드 지향
+    
+ ### 1/17(화)
+ 
+ ##### mutable vs immutable 
+ - mutable : 생성된 이후에 상태가 변경될 수 있는 객체, object, array만 mutable, stack
+ - immutable : 생성된 이후에 상태가 변경될 수 없는 객체, JS에서 object와 array를 제외한 모든 타입, heap
+
+##### 재귀
+- 콜스택을 무리하게 호출하면 stackoverflow
+- 최종 return은 나를 return(자기 자신을 호출하는 함수)
+- 재귀 코드를 짤 때, 어느 범위까지 callstack이 호출되는지 가늠이 안된다면 사용을 지양
+    
+##### 꼬리 재귀 : 
+- if와 return 문으로 구성되며, return 연산 자체가 함수의 앞뒤에 붙는 것이 아니라 함수 파라미터 안에서 끝나야 허용 가능함
+- function a(param){
+    if(param > 1) return param;
+    return a(param+1)  //연산과 리턴 시킬 값이 꼬리에 들어감
+    }
+- 꼬리재귀 가능하면 무조건 꼬리재귀로 짜기
+- do - while문으로 변환 가능한 형태
+- ES6~ 꼬리재귀 지원
+    
+##### replace
+-  순환 비용이 비쌈
+
+##### slice
+- slice(0) : 0~ a인덱스, a인덱스~끝 인덱스 이런 식으로 나눠서 slice를 하면 비용이 많이 들어서 첫인덱스 또는 마지막 인덱스로 slice 하는 것을 추천
+    
+ 
+ 
+ ##### 자바
+ - 변수마다 길이제한 (숫자(int, long), 문자)
+ - Array와 ArrayList의 자료구조는 다르다
+ - Array : 길이지정, length로 비교
+ - ArrayList : 길이 자유롭게 변경 가능, collection객체
+    
+
+ ### 1/25(수)
+ #####팁
+  - literal이 가능하면 굳이 loop태우지 말고,  literal로 표기하자 (값과 개수가 정해진 경우) 
+    
+ ##### 오버 로딩 vs 오버라이딩 
+    - 오버 로딩 : 같은 이름의 메서드 여러개를 가지면서 매개변수의 유형(타입)과 개수가 다르도록 하는 기술
+    - 오버라이딩 : 상위 클래스가 가지고 있는 메서드를 하위 클래스가 재정의
+    
+ #####커링
+  - 다중루프와 같지 않음
+  - 파라미터 개수만 바뀌어서 오버로딩
+  - 2단계 이상 커링에서 빛을 발함
+   - 함수의 내부가 바로 실행되지 않음 <=> 즉시 실행함수: 바로 실행함
+  - function A (b, c){
+        let e = b, f = c;     //변수에 담아 사용하며 클로저 사용 기법 중 하나
+        return function B(d){
+            let g = d
+            return e + f + g
+        }
+    }
+    
+    let test = A(1, 2);
+     100줄의 코드
+    let nextTest = test(3)
+    
+ ##### arguments
+    - 매개변수(parameter)가 arguments안에 들어가는 개념이므로 매개변수(parameter)가 부족하여도 자바스크립트에서는 부족한 매개변수가 undefined로 하여 적용됨
+    -  function(arguments){} : 일반함수에는 arguments가 내장 되어 있음
+    - arrow function = (...args) =>{} :  화살표 함수에는 내장 되어 있지 않으므로 화살표함수에서 arguments 사용시 ...restparameter 사용해서 처리해야함
+    
+ ##### rest parameter
+    -  매개변수가 몇개 받을지 정의가 되지 않은 경우에 사용
+
+ ##### 자바
+  - charAt : 1글자만 가져오는 것
+  - .put : js의 replace 역할
+  - 자바는 객체의 리터럴 개념이 없음 vs  자바스크립트 : 유사배열 허용
+  
+ 
+ 
+ 
+
+
