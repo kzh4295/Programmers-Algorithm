@@ -1,17 +1,21 @@
 function solution(numbers, hand) {
+    let left = '*'
+    let right = '#'
     let answer = '';
     
-    let distance = numbers.reduce((acc, ele, idx)=>{
-       switch(ele){
-           case 1, 4, 7:
-               console.log('ele', ele)
-               break;
-           case 3, 6, 9:
-               console.log('ele', ele)
-               break;
-       }
-        return acc;
-    },[])
+    let distance = numbers.map((ele, idx)=>{
+        let temp = '';
+        switch(ele){
+            case 1: case 4: case 7:
+                temp += 'L';
+                break
+            case 3: case 6: case 9:
+                temp += 'R';
+                break
+        }
+       return temp
+    })
+    
     
     return distance;
 }
