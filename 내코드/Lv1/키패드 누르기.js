@@ -12,7 +12,7 @@ function solution(numbers, hand) {
         let distanceLeft = 0;                       //left - ele 사이의 거리
         let distanceRight = 0;                      // right - ele 사이의 거리
         
-        switch(ele === 0?11 :ele){
+        switch(ele){
             case 1: case 4: case 7:
                 zeroToEleven[idx] = 'L';
                 leftValue = ele;
