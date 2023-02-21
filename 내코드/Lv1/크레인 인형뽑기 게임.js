@@ -32,3 +32,35 @@ function solution(board, moves){
     
     return answer;
 }
+
+=========================================나라님 코드==========================================================
+
+  function solution(board, moves) {
+    let flushCount = 0;
+    let boardSize = board.length;
+    
+    let basket = moves.reduce((acc,ele,idx)=>{
+        for(let i=0; i<boardSize; i++){
+            if(board[i][ele-1]) {
+                let preItem = acc.pop();
+                // 이전 아이템과 비교해서 같지 않으면 둘 다 다시 집어넣기
+                // 동일하면 flushCount만 증감.
+                if(preItem !== board[i][ele-1]) { 
+                    acc.push(preItem);
+                    acc.push(board[i][ele-1]);
+                }else{
+                    flushCount++;
+                }
+                board[i][ele-1] = 0;
+                break;
+            }
+            else {
+                continue;   
+            }
+            
+        }
+        return acc;
+    },[]);
+    
+    return flushCount*2;
+}
