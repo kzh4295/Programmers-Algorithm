@@ -2,7 +2,7 @@
 
 ### _문제 풀이_
 
-```js
+```javascript
 <!-- My Solution -->
 let leftValue = 10; // leftValue 초기값 (* => 10)
 let rightValue = 12; // rightValueValue 초기값 (# => 12)
@@ -72,7 +72,7 @@ function solution(numbers, hand) {
 
 
 
-```js
+```javascript
 <!-- 나라님 풀이 -->
     function solution(numbers, hand) {
     //2,5,8,0 가까운 손 찾기 펑션
