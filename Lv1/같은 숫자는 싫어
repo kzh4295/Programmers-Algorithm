@@ -1,6 +1,5 @@
-소요시간 => 15:00
-
-==============내 코드========================
+```javascript
+<!-- 나의 풀이 -->
 function solution(arr){
     let answer = [];
     answer.push(arr[0])
@@ -18,12 +17,20 @@ function solution(arr){
     return answer;
 }
 
-=====================타인의 코드 느낀점===============================
+```
 
+```javascript
+<!-- 타인의 풀이 -->
 function solution(arr){
     return arr.filter((ele, idx)=>{
         return ele !== arr[idx+1]
     })
 }
 
-느낀점 : for문 말고 이런식으로 접근 할 수도 있구낭! 다음에 써먹어 봐야징!!
+
+```
+
+#
+
+### [Tip]
+for문 말고 이런식으로 접근 할 수도 있구낭! 다음에 써먹어 봐야징!!
