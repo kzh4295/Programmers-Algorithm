@@ -11,7 +11,8 @@ function solution(numbers, hand) {
 		return number || 11;
 	});
 
-	// 함수와 변수를 분리하면 좋아요	// const convertZeroToEleven = (number) => {
+	// 함수와 변수를 분리하면 좋아요
+	// const convertZeroToEleven = (number) => {
 	// 	return number === 0 ? 11 : number;
 	// };
 	//
