@@ -1,10 +1,8 @@
-## 62. 키패드 누르기
+// 키패드 누르기
+// https://school.programmers.co.kr/learn/courses/30/lessons/67256
 
-### _문제 풀이_
 
-```javascript
-<!-- 나의 풀이 -->
-
+=====================나의 풀이==============================
 let leftValue = 10; // leftValue 초기값 (* => 10)
 let rightValue = 12; // rightValueValue 초기값 (# => 12)
 
@@ -67,15 +65,10 @@ function solution(numbers, hand) {
   answer = elevenNumber.join('');
   return answer;
 }
-```
 
 
 
-
-
-```javascript
-<!-- 나라님 풀이 -->
-
+=========================나라님 풀이==================================
     function solution(numbers, hand) {
     //2,5,8,0 가까운 손 찾기 펑션
     const findHand = (leftHand, rightHand, number) =>{
@@ -110,12 +103,11 @@ function solution(numbers, hand) {
     });
     return handCalc.handString;
 }
-```
 
-#
 
-### [Tip]
 
-- 변수 네이밍 주의(동사 => 함수, 명사 => 변수)
-- depth를 깊이 있게 들어가지 말자 => 반복되는 부분 함수로 변환하여 가독성 높이기!
-- 0은 false로 암묵적 타입 변환되는 것 잊지 말자!
+// [Tip]
+
+// - 변수 네이밍 주의(동사 => 함수, 명사 => 변수)
+// - depth를 깊이 있게 들어가지 말자 => 반복되는 부분 함수로 변환하여 가독성 높이기!
+// - 0은 false로 암묵적 타입 변환되는 것 잊지 말자!
