@@ -1,5 +1,6 @@
-```javascript
-<!-- 나의 풀이 -->
+// 정수 내림차순으로 배치하기
+// https://school.programmers.co.kr/learn/courses/30/lessons/12933
+
 function solution(n) {
     let answer = 0;
     let calcDigit = (n + '').split('').sort(function(a, b){
@@ -9,8 +10,8 @@ function solution(n) {
     return answer;
 }
 
-``````javascript
-<!-- 타인의 풀이1 -->
+// ================================================================
+// 타인의 풀이
 function solution(n) {
   const newN = n + "";
   const newArr = newN
@@ -22,12 +23,11 @@ function solution(n) {
   return +newArr;
 }
 
-#
+// 느낀점
+// '12345' => 12345하는 방법으로  + '12345'하면 되겠구나, sort에서 내림차순으로 변경하면 되니 굳이 reverse를 안써도 되겠다.
 
-//느낀점
-'12345' => 12345하는 방법으로  + '12345'하면 되겠구나, sort에서 내림차순으로 변경하면 되니 굳이 reverse를 안써도 되겠다.
-
-<!-- 타인의 풀이2 -->
+// ================================================================
+// 타인의 풀이
 function solution(n) {
     var nums =[];
     do{
@@ -38,6 +38,6 @@ function solution(n) {
 
 #
 
-//느낀점 
-숫자열을 만들기 위해 굳이 문자열을 만들고 풀어서 다시 숫자열을 만들지 말고, 1의 자릿수로 풀어서 루프를 돌리는 것도 유용하겠구나.
-```;
+// 느낀점 
+// 숫자열을 만들기 위해 굳이 문자열을 만들고 풀어서 다시 숫자열을 만들지 말고, 1의 자릿수로 풀어서 루프를 돌리는 것도 유용하겠구나.
+
