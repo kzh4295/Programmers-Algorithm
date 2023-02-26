@@ -1,3 +1,6 @@
+// 핸드폰 번호 가리기
+// https://school.programmers.co.kr/learn/courses/30/lessons/12948
+
 // 나의풀이
 function solution(phone_number) {
     let answer = '';
@@ -21,7 +24,7 @@ function solution(phone_number) {
 
 
 
-//느낀점
+// 느낀점
 // 정규식으로 접근하는게 속도가 더 빠르구나..
 
 
