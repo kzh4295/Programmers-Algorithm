@@ -1,5 +1,7 @@
-```javascript
-<!-- 나의 풀이 -->
+// 약수의 개수와 덧셈
+// https://school.programmers.co.kr/learn/courses/30/lessons/77884
+
+// 나의 풀이
 function factorial(n){
     let temp =[]
     for(let i = 1; i<=n; i++){
@@ -28,10 +30,9 @@ function solution(left, right) {
     return answer;
 }  
 
-```
 
-```javascript
-<!-- 타인의 풀이 -->
+// ================================================================
+// 타인의 풀이
 function solution(left, right) {
     var answer = 0;
     for (let i = left; i <= right; i++) {
@@ -43,16 +44,12 @@ function solution(left, right) {
     }
     return answer;
 }
-
-```
-
-#
-
 //느낀점
-제곱근이 정수면 약수의 개수가 홀수다!!!!!!!!!!
+// 제곱근이 정수면 약수의 개수가 홀수다!!!!!!!!!!
 
-```javascript
-<!-- 타인의 풀이 -->
+
+// ================================================================
+// 타인의 풀이
 function getDivisorCount(number) {
   if (number === 1) {
     return 1;
@@ -81,13 +78,9 @@ function solution(left, right) {
   return result;
 }
 
-```
-
-#
-
 //느낀점
-메모이제이션 기법 
-- 컴퓨터 프로그램이 동일한 계산을 반복해야 할 때, 이전에 계산한 값을 메모리에 저장함으로써 동일한 계산의 반복 수행을 제거하여 프로그램 실행 속도를 빠르게 하는 기술
+// 메모이제이션 기법 
+// - 컴퓨터 프로그램이 동일한 계산을 반복해야 할 때, 이전에 계산한 값을 메모리에 저장함으로써 동일한 계산의 반복 수행을 제거하여 프로그램 실행 속도를 빠르게 하는 기술
 
 
 
