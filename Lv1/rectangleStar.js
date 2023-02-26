@@ -1,5 +1,7 @@
-```javascript
-<!-- 나의 풀이 -->
+// 직사각형 별찍기
+// https://school.programmers.co.kr/learn/courses/30/lessons/12969
+
+// 나의 풀이
 process.stdin.setEncoding('utf8');
 process.stdin.on('data', data => {
     const n = data.split(" ");
@@ -10,10 +12,9 @@ process.stdin.on('data', data => {
     }
 })
 
-```
 
-```javascript
-<!-- 타인의 풀이 -->
+// ================================================================
+// 타인의 풀이
 process.stdin.setEncoding('utf8');
 process.stdin.on('data', data => {
     const n = data.split(" ");
@@ -23,10 +24,6 @@ process.stdin.on('data', data => {
     console.log(star.repeat(b));
 });
 
-```
-
-#
-
 //느낀점
-- const star = `${'*'.repeat(a)}\n`; 이렇게 표현하는게 보기 좋았다.
-- 거의 repeat을 사용하여 유사하였고, 노드로 출력하고자 시도하느라 시간이 소요되었다...
+// - const star = `${'*'.repeat(a)}\n`; 이렇게 표현하는게 보기 좋았다.
+// - 거의 repeat을 사용하여 유사하였고, 노드로 출력하고자 시도하느라 시간이 소요되었다...
