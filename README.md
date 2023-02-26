@@ -1,6 +1,6 @@
 # Lv.1 (총 68문제)
 
-
+# 자습
 | 번호 | 문제 | 풀이 |
 |:---:|:---:|:---:|
 |1|[짝수와 홀수](https://school.programmers.co.kr/learn/courses/30/lessons/12937)|[짝수와 홀수](https://github.com/kzh4295/Programmers_Algorithm/blob/master/Lv1/%EC%A7%9D%EC%88%98%EC%99%80%20%ED%99%80%EC%88%98.md)|
@@ -9,7 +9,7 @@
 |4|[자릿수 더하기]()|[자릿수 더하기](https://github.com/kzh4295/Programmers_Algorithm/blob/master/Lv1/%EC%9E%90%EB%A6%BF%EC%88%98%20%EB%8D%94%ED%95%98%EA%B8%B0.md)|
 |5|[자연수 뒤집어 배열로 만들기]()|[자연수 뒤집어 배열로 만들기](https://github.com/kzh4295/Programmers_Algorithm/blob/master/Lv1/%EC%9E%90%EC%97%B0%EC%88%98%20%EB%92%A4%EC%A7%91%EC%96%B4%20%EB%B0%B0%EC%97%B4%EB%A1%9C%20%EB%A7%8C%EB%93%A4%EA%B8%B0.md)|
 |6|[문자열 내 p와 y의 개수]()|[문자열 내 p와 y의 개수](https://github.com/kzh4295/Programmers_Algorithm/blob/master/Lv1/%EB%AC%B8%EC%9E%90%EC%97%B4%20%EB%82%B4%20p%EC%99%80%20y%EC%9D%98%20%EA%B0%9C%EC%88%98.md)|
-|7|[정수 내림차순으로 배치하기]()|[정수 내림차순으로 배치하기](https://github.com/kzh4295/Programmers_Algorithm/blob/master/Lv1/%EC%A0%95%EC%88%98%20%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C%EC%9C%BC%EB%A1%9C%20%EB%B0%B0%EC%B9%98%ED%95%98%EA%B8%B0.md)|
+|7|[정수 내림차순으로 배치하기]()|[정수 내림차순으로 배치하기](https://github.com/kzh4295/Programmers_Algorithm/blob/master/Lv1/%EC%A0%95%EC%88%98%20%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C%EC%9C%BC%EB%A1%9C%20%**EB**%B0%B0%EC%B9%98%ED%95%98%EA%B8%B0.md)|
 |8|[나머지가 1이 되는 수 찾기]()|[나머지가 1이 되는 수 찾기](https://github.com/kzh4295/Programmers_Algorithm/blob/master/Lv1/%EB%82%98%EB%A8%B8%EC%A7%80%EA%B0%80%201%EC%9D%B4%20%EB%90%98%EB%8A%94%20%EC%88%98%20%EC%B0%BE%EA%B8%B0.md)|
 |9|[하샤드 수]()|[하샤드 수](https://github.com/kzh4295/Programmers_Algorithm/blob/master/Lv1/%ED%95%98%EC%83%A4%EB%93%9C%20%EC%88%98.md)|
 |10|[두 정수 사이의 합]()|[두 정수 사이의 합](https://github.com/kzh4295/Programmers_Algorithm/blob/master/Lv1/%EB%91%90%20%EC%A0%95%EC%88%98%20%EC%82%AC%EC%9D%B4%EC%9D%98%20%ED%95%A9.md)|
@@ -72,4 +72,8 @@
 |67|[신고 결과 받기]()|[]()|
 |68|[개인정보 수집 유효기간]()|[]()|
 
-
+# 경태님께서 해주신 리뷰
+| 번호 | 기간 | 풀이 |
+|:---:|:---:|:---:|
+|1|2/22 ~ 2/24|[크레인 인형뽑기 게임](https://github.com/kzh4295/Programmers_Algorithm/blob/master/Lv1/crane.js)|
+|2|2/27~|[]()|
