@@ -1,5 +1,4 @@
-```javascript
-<!-- 나의 풀이 -->
+// 나의 풀이
 function solution(arr1, arr2) {
     let answer = [];
     for(let i = 0; i< arr1[0].length ; i++){
@@ -11,23 +10,19 @@ function solution(arr1, arr2) {
     return answer;
 }
 
-```
+// ===========================================================================
 
-```javascript
-<!-- 타인의 풀이 -->
+// 타인의 풀이 
 function solution(arr1,arr2){
     return arr1.map((a,i) => a.map((b, j) => b + arr2[i][j]));
 }
 
-```
+// [느낀점]
+// 이 방식이 커링 기법인건가...?
 
-#
+// ===========================================================================
 
-### [Tip]
-이 방식이 커링 기법인건가...?
-
-```javascript
-<!-- 타인의 풀이 -->
+// 타인의 풀이
 function solution(arr1, arr2) {
     var answer = [[]];
     for (let i=0; i<arr1.length; i++){
@@ -42,10 +37,8 @@ function solution(arr1, arr2) {
     return answer;
 }
 
-```
 
-#
 
-### [Tip]
-행렬의 문제는 굳이 1번 루프 말고 2번 루프를 먼저 생각하고 이중배열의 경우 answer[i] =[]; 이 생각을 잊지 말자!!
+//느낀점
+// 행렬의 문제는 굳이 1번 루프 말고 2번 루프를 먼저 생각하고 이중배열의 경우 answer[i] =[]; 이 생각을 잊지 말자!!
 

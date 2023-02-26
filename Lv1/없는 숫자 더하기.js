@@ -25,6 +25,6 @@ function solution(numbers) {
 
 #
 
-### [Tip]
+//느낀점
 - inclueds를 사용하여 반복문으로도 쓸 수 있겠구나.. 그치만 배열의 길이가 길어지면 오히려 이 코드가 유용하겠구나..
 

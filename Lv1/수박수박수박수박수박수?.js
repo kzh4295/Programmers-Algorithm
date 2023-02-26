@@ -20,4 +20,4 @@ function solution(n) {
 
 #
 
-### [Tip]
+//느낀점

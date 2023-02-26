@@ -25,7 +25,7 @@ function solution(absolutes, signs) {
 
 #
 
-### [Tip]
+//느낀점
 - 배열의 합을 연산할때는 reduce를 생각하자. 그치만 2개의 배열의 루프를 돌릴때는 reduce가 for보다 속도가 느리므로 유의해서 쓰자.
 
 

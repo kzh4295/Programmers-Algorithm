@@ -1,6 +1,4 @@
-
-```javascript
-<!-- 나의 풀이 -->
+// 나의 풀이
 function solution(num) {
     let answer = 0;
     
@@ -26,10 +24,9 @@ function solution(num) {
     return answer;
 }
 
-```
+// =================================================
 
-```javascript
-<!-- 타인의 풀이 -->
+// 타인의 풀이
 function solution(num) {
     var answer = 0;
     while(num !=1 && answer !=500){
@@ -39,23 +36,15 @@ function solution(num) {
     return num == 1 ? answer : -1;
 }
 
-```
 
-#
+//느낀점
+// - num !=1 && answer !=500 라는 2개의 조건식이 충족될 때, 루프를 도니까 좀 더 좋은 코드 같다.
 
-### [Tip]
-- num !=1 && answer !=500 라는 2개의 조건식이 충족될 때, 루프를 도니까 좀 더 좋은 코드 같다.
+// =================================================
 
-```javascript
-<!-- 타인의 풀이 -->
-function collatz(num,count = 0) {
-    return num == 1 ? (count >= 500 ? -1 : count) : collatz(num % 2 == 0 ? num / 2 : num * 3 + 1,++count);
+function solution(num,count = 0) {
+    return num == 1 ? (count >= 500 ? -1 : count) : solution(num % 2 == 0 ? num / 2 : num * 3 + 1,++count);
 }
 
-
-```
-
-#
-
-### [Tip]
-재귀 함수를 이용해서 풀 수 있구나..
+//느낀점
+// 재귀 함수를 이용해서 풀 수 있구나..

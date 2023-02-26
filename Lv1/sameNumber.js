@@ -1,5 +1,4 @@
-```javascript
-<!-- 나의 풀이 -->
+//나의 풀이
 function solution(arr){
     let answer = [];
     answer.push(arr[0])
@@ -17,10 +16,8 @@ function solution(arr){
     return answer;
 }
 
-```
-
-```javascript
-<!-- 타인의 풀이 -->
+// ================================================
+// 타인의 풀이
 function solution(arr){
     return arr.filter((ele, idx)=>{
         return ele !== arr[idx+1]
@@ -28,9 +25,5 @@ function solution(arr){
 }
 
 
-```
-
-#
-
-### [Tip]
-for문 말고 이런식으로 접근 할 수도 있구낭! 다음에 써먹어 봐야징!!
+//느낀점
+// for문 말고 이런식으로 접근 할 수도 있구낭! 다음에 써먹어 봐야징!!

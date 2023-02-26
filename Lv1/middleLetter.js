@@ -1,5 +1,4 @@
-```javascript
-<!-- 나의 풀이 -->
+// 나의 풀이
 function solution(s) {
     let answer = '';
     let len = s.length;
@@ -10,6 +9,3 @@ function solution(s) {
     return answer;
 }
 
-```
-
-  
