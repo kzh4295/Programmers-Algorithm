@@ -1,5 +1,7 @@
-```javascript
-<!-- 나의 풀이 -->
+// 신규 아이디 추천
+// https://school.programmers.co.kr/learn/courses/30/lessons/72410
+
+// 나의 풀이
 function solution(new_id) {
     let answer = '';
     
@@ -51,8 +53,6 @@ function solution(new_id) {
     return answer;
 }
 
-
-```
 
 
 
