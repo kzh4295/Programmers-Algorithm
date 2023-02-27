@@ -1,5 +1,7 @@
-```javascript
-<!-- 나의 풀이 -->
+// 예산
+// https://school.programmers.co.kr/learn/courses/30/lessons/12982
+
+// 나의 풀이
 function solution(d, budget) {
     let total = 0 // idx만큼 부서가 신청한 금액의 합
     let idx = 0;  // idx번째 부서가 신청
@@ -13,10 +15,8 @@ function solution(d, budget) {
 }
 
 
-```
-
-```javascript
-<!-- 타인의 풀이 -->
+// ================================================================
+// 타인의 풀이
 function solution(d, budget) {
     d.sort((a, b) => a - b);
 
@@ -24,4 +24,4 @@ function solution(d, budget) {
 
     return d.length;
 }
-```
+
