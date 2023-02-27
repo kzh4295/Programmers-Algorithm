@@ -1,13 +1,13 @@
 # Lv.1 
 
-## 경태님의 첨언
+#### 경태님의 첨언
 
 | 번호 | 기간 | 풀이 |
 |:---:|:---:|:---:|
 |1|2/22 ~ 2/24|[키패드 누르기](https://github.com/kzh4295/Programmers_Algorithm/blob/master/Lv1/keypad.js)|
 |2|2/27~|[실패율]()|
 
-## 자습
+#### 자습
 | 번호 | 풀이 |
 |:---:|:---:|
 |1|[짝수와 홀수](https://github.com/kzh4295/Programmers_Algorithm/blob/master/Lv1/evenOddNumbers.js)|
