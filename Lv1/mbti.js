@@ -1,5 +1,7 @@
-```javascript
-<!-- 나의 풀이 -->
+// 성격 유형 검사하기
+// https://school.programmers.co.kr/learn/courses/30/lessons/118666
+
+// 나의 풀이
 function solution(survey, choices) {
   let answer = "";
 
@@ -49,5 +51,3 @@ function solution(survey, choices) {
   return answer;
 }
 
-
-```
