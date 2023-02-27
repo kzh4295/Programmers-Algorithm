@@ -1,3 +1,6 @@
+// 3진법 뒤집기
+// https://school.programmers.co.kr/learn/courses/30/lessons/68935
+
 // 나의 풀이
 function solution(n) {
   let threeToReverse = [...n.toString(3)].reverse().join('');
@@ -6,7 +9,6 @@ function solution(n) {
 }
 
 // ====================================================================
-
 // 타인의 풀이
 function solution(n) {
   var answer = 0;
@@ -26,5 +28,5 @@ function solution(n) {
   return res.map((a, i) => a * 3 ** (res.length - 1 - i)).reduce((r, a) => r + a);
 }
 
-// //느낀점
+// 느낀점
 //  내장 메서드 대신 재귀로도 풀 수 있구나
