@@ -1,3 +1,7 @@
+// 정렬
+// 문제 사라진 상태
+
+// 내풀이
 function solution(array, commands) {
     let answer = 0; 
     let arr = [];
@@ -14,15 +18,10 @@ function solution(array, commands) {
     crr = array.slice(commands[2][0] - 1, commands[2][1]).sort()
     console.log(crr);
     drr.push(crr[commands[2][2] - 1])
-    
-    
+
     for(let i = 0; i<3 ; i++){
         
     }
-    
-    
-    
-    
     return drr;
 }
 
