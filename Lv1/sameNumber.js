@@ -1,3 +1,6 @@
+// 같은 숫자는 싫어
+// https://school.programmers.co.kr/learn/courses/30/lessons/12906
+
 //나의 풀이
 function solution(arr){
     let answer = [];
@@ -11,8 +14,6 @@ function solution(arr){
            answer.push(now)
        }
     }
-
-    
     return answer;
 }
 
@@ -25,5 +26,5 @@ function solution(arr){
 }
 
 
-//느낀점
+// 느낀점
 // for문 말고 이런식으로 접근 할 수도 있구낭! 다음에 써먹어 봐야징!!
