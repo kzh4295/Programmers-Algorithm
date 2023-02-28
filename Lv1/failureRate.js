@@ -8,7 +8,7 @@ function solution(N, stages) {
 
   const failPeople = {};
   const failPercent = {};
-  const sortedStages = stages.sort((a,b)=> a-b); // [1, 2, 2, 2, 3, 3, 4, 6 ]
+  const sortedStages = stages.sort((a,b)=> a-b); 
 
   const keyArray = Array.from({length:N}, (v,i)=>i+1); 
   const valueArray = [];
@@ -16,7 +16,7 @@ function solution(N, stages) {
   for (let i = 0; i < keyArray.length; i++) {
       valueArray[i] = sortedStages.filter((ele) => ele === keyArray[i]).length;
       failPeople[keyArray[i]] = valueArray[i]
-  } // {1:1, 2:3, 3:2, 4:1, 5:0}
+  } 
 
   let userNum = stages.length;
   for (const [key, value] of Object.entries(failPeople)) {
