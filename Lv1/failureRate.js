@@ -4,38 +4,32 @@
 
 // 나의 풀이
 function solution(N, stages) {
-  let result = [];
-  let failMap = {};
-  let failPerMap = {};
-  let sortedStages = stages.sort((a,b)=>a-b);
+  const result = [];
 
-  const keyArrayList = [...Array(N).keys()].map((ele) => ele + 1);
-  const valArr=[];
+  const failPeople = {};
+  const failPercent = {};
+  const sortedStages = stages.sort((a,b)=> a-b); // [1, 2, 2, 2, 3, 3, 4, 6 ]
 
-  for (let i = 0; i < keyArrayList.length; i++) {
-      valArr[i] = sortedStages.filter((ele) => ele === keyArrayList[i]).length;
-      failMap[keyArrayList[i]] = valArr[i]
-  }
+  const keyArray = Array.from({length:N}, (v,i)=>i+1); 
+  const valueArray = [];
+
+  for (let i = 0; i < keyArray.length; i++) {
+      valueArray[i] = sortedStages.filter((ele) => ele === keyArray[i]).length;
+      failPeople[keyArray[i]] = valueArray[i]
+  } // {1:1, 2:3, 3:2, 4:1, 5:0}
 
   let userNum = stages.length;
-  for (const [key, val] of Object.entries(failMap)) {
-      const failPer = val/userNum;
-      failPerMap[key] = failPer;
-      userNum -= val;
+  for (const [key, value] of Object.entries(failPeople)) {
+      const failPer = value/userNum;
+      failPercent[key] = failPer;
+      userNum -= value;
       if(userNum == 0) userNum=1; 
   }
 
-  let sorted = Object.entries(failPerMap).sort((a, b) => b[1] - a[1]);
+  const sortedFailPercent = Object.entries(failPercent).sort((a, b) => b[1] - a[1]);
 
-  for(let ele of sorted) {
-	  result.push(ele[0])
+  for(const ele of sortedFailPercent) {
+	  result.push(ele[0] * 1)
   }
-
-  Object.entries(failPerMap).reduce((acc, ele, idx)=>{
-    return acc;
-  },{})
-
-
-
-  return result.map((ele)=>ele *1)
+  return result;
 }
