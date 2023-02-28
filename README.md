@@ -5,7 +5,7 @@
 | 번호 | 기간 | 풀이 | 이슈 | 자문 |
 |:---:|:---:|:---:|:---:|:---:|
 |1|2/22 ~ 2/24|[키패드 누르기](https://github.com/kzh4295/Programmers_Algorithm/blob/master/Lv1/keypad.js)| |[키패드 누르기](https://github.com/kzh4295/Programmers_Algorithm/blob/master/Lv1/keypad_.js)|
-|2|2/27~|[실패율]()| | |
+|2|2/27~|[실패율](https://github.com/kzh4295/Programmers_Algorithm/blob/master/Lv1/failureRate.js)| | |
 
 #### 자습
 | 번호 | 풀이 |
