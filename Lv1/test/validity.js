@@ -1,6 +1,6 @@
 // 내코드
 function solution(today, terms, privacies) {
-    let answer = [];
+    // let answer = [];
 
     // 연월일을 일로 계산한 값의 합을 계산해주는 함수(method)
     function calcDate(date){
@@ -16,7 +16,7 @@ function solution(today, terms, privacies) {
       return acc;
     },{})
 
-    console.log(effectiveToday)
+    console.log(Object.values(effectiveToday))
 
     
     
@@ -28,12 +28,24 @@ function solution(today, terms, privacies) {
     },{})
 
     console.log(tt)
+    console.log(tt[1].type)
+    console.log(tt[1].value)
 
-    for(let i = 0; i <tt.length; i++){
-      switch(Object.values(tt[i]).type){
-        
-      } 
+    let answer = [];
+    let len = Object.keys(tt).length;
+    for(let i = 0; i <= len; i++){
+
+      Object.values(effectiveToday)[j]
+      // console.log(tt[i+1]?.value)
+      // for(let j = 0; j<Object.keys(effectiveToday).length; j++){
+      //   console.log(Object.values(effectiveToday)[j])
+      //   if(tt[i+1]?.value > Object.values(effectiveToday)[j]) answer.push(i)
+      //   // if((tt[i+1]?.type === Object.keys(effectiveToday)[j]) && (tt[i+1].value > Object.values(effectiveToday)[j])) answer.push(i)
+      // }
     }
+  
+
+    return answer
 
 }
 
