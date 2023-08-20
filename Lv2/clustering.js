@@ -6,7 +6,7 @@ function solution(str1, str2) {
     // str2에 변화를 감지하는 변수
     let tempStr2 = '';
     // 공백, 특수문자는 제거하는 정규식
-    let reg = /[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/ ]/gim;
+    let reg = /[^a-z]/gi;
     
     // 2개의 파라미터의 스트링배열 요소를 앞에서부터 2자씩 쌍을 이룬 요소로 변환시키는 변수
     let str1Array = [];
@@ -19,7 +19,7 @@ function solution(str1, str2) {
     // 문자열 대소문자 바꾸고, 공백과 특수 문자는 정규식 이용해서 제거
     tempStr1 = str1.toUpperCase().replace(reg, "")
     tempStr2 = str2.toUpperCase().replace(reg, "")
-    console.log(tempStr1, tempStr2)
+    // console.log(tempStr1, tempStr2)
 
     // tempStr1, tempStr2은 문자열이니까 배열애 원소 두개씩 넣기
     let tempArr1 = [...tempStr1]
@@ -48,7 +48,7 @@ function solution(str1, str2) {
     },{})
     union = Object.keys(tt)
     console.log(tt)
-    console.log(intersection)
+    // console.log(intersection)
     console.log(union)
 
     intersection = Object.entries(tt).map((ele)=>{
@@ -56,17 +56,22 @@ function solution(str1, str2) {
             return ele[0]
         }
     })
-    console.log(intersection)
+    intersection = intersection.filter(ele=> ele !== undefined)
+
 
     console.log(intersection)
 
     // answer = 교집합의 크기 / 합집합의 크기 * 65536
-    answer = intersection.length / union.length * 65536
+    
+    answer = Math.floor(intersection.length / union.length * 65536);
+    
 
-    return answer;
+    return isNaN(answer) ? 65536 : answer;
 }
 
-let result = solution('FRANCE', 'french');
+
+
+let result = solution("handshake", "shake hands");
 
 console.log(result);
 // 예상 결과값      16384
